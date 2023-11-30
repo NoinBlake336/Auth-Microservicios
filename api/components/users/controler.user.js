@@ -19,8 +19,4 @@ module.exports = (injectedStore)=>{
         list,
         get
     }
-}
-
-module.exports = {
-    list
-}
+};
