@@ -1,25 +1,25 @@
 const db = {
     'user':[{
         id:'1',
-        name:'Carlos'
+        name:'Carlos',
     }]
 };
 
 
-const list = (table)=>{
+const list = async(table)=>{
     return db[table];
 };
 
-const get = (table,id)=>{
-    let col = list(table);
+const get = async(table,id)=>{
+    let col = await list(table);
     return col.filter(item=>item.id = id)[0] || null;
 };
 
-const upsert = (table,data)=>{
+const upsert = async(table,data)=>{
     db[colletion].push(data);
 };
 
-const remove = (table,id)=>{
+const remove = async(table,id)=>{
     return true;
 };
 
